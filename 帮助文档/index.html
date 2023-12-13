@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Documentation | EduHash WordPress</title>
+
+  <meta charset="utf-8">
+  <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="">
+  
+  <!-- Google Fonts -->
+  <link href='http://fonts.googleapis.com/css?family=Poppins:400,600,700%7CRoboto:400,700' rel='stylesheet'>
+
+  <!-- Css -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/prism.css" />
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Syntax Highlighter -->
+	<link rel="stylesheet" type="text/css" href="syntax-highlighter/styles/shCore.css" media="all">
+	<link rel="stylesheet" type="text/css" href="syntax-highlighter/styles/shThemeDefault.css" media="all">
+
+</head>
+
+<body data-spy="scroll" data-offset="60" data-target=".navbar" class="relative">
+
+  <!-- Preloader -->
+  <div class="loader-mask">
+    <div class="loader">Loading...</div>
+  </div>
+
+  <div class="main-wrapper">
+
+    <!-- Navigation -->
+    <nav class="navbar">
+      <ul class="local-scroll nav navbar-nav">
+        <li><a href="#getting-started">Getting Started</a></li>
+        <li><a href="#theme-install">Install Theme</a></li>
+        <li><a href="#recommended-plugins">Recommended Plugins</a></li>
+        <li><a href="#fonts">Fonts</a></li>
+        <li><a href="#theme-menu">Theme Menu</a></li>
+        <li><a href="#logo-upload">Logo upload</a></li>
+        <li><a href="#layout">Html Layout</a></li>
+        <li><a href="#csslayout"> Css Layout</a></li>
+        <li><a href="#jslayout"> Js Layout</a></li>
+        <li><a href="#footer">Footer</a></li>
+        <li><a href="#contact-form">Contact Form</a></li>
+        <li><a href="#img-source">Image Source </a></li>
+        <li><a href="#credits">Credits</a></li>
+        <li><a href="#support">Support</a></li>
+      </ul>
+    </nav>
+
+    <!-- Menu Icon -->
+    <button class="menu-icon" id="menu-icon">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <!-- Menu Icon Close -->
+    <button class="menu-icon-close" id="menu-icon-close">
+      <span></span>
+      <span></span>
+    </button>
+
+    <!-- Content -->
+    <div class="content-wrapper oh">
+
+      <header>
+        <h1>EduHash Template Documentation</h1>
+            </header>
+
+      <hr>
+
+      <h1 class="section-title" id="getting-started">Getting Started</h1>
+      <p>Unzip files from archive and you will following folders and files.</p>
+      <ul>
+        <li><strong>EduHash.zip</strong> - Full Html file with Documentation</li>
+        <li><strong>Html Folder</strong> - Main Html Templates files</li>
+        <li><strong>Documentation</strong> - Documentation guide</li>
+      </ul>
+      <hr>
+
+      <h1 class="section-title" id="theme-install">Installation</h1>
+      <div class="section-content">
+        <ol>
+          <li>After unzip the download pack, you'll found a Template Folder with all the files.</li>
+          <li>You can view this Template in any browser, you can display or edit the Template without an internet connection.(May
+            not wotrk fonts and google map).</li>
+          <li>The only section that will not work is the Contact Section which contains PHP code and requires a server environment
+            for send messages.</li>
+          <li>Now go to your cpanel or open your FTP Client (like <a target="_blank" href="https://filezilla-project.org/download.php">Filezilla</a>)
+            and upload the content of the Template on your server root.</li>
+          <li>Once the files are done uploading go to www.yourdomainname.com/index.html</li>
+        </ol>
+      </div>
+      <hr>
+      <h1 class="section-title" id="recommended-plugins">Used Plugins</h1>
+      <ul class= "list-item">
+        <li>Owl Carousel</li>
+        <li>Bootstrap 4.5</li>
+        <li>Counterup</li>
+        <li>Isotope</li>
+        <li>Flaticon</li>
+        <li>Font Awesome</li>
+      </ul>
+
+      <h1 class="section-title" id="fonts">Fonts</h1>
+      <p>By default, the template loads this font from Google Web Font Services, you can change the font with the one that
+        suits you best.</p>
+
+        <img src="img/fonts.png" alt="">
+
+      <p class="twenty">Remember to change the font into <strong>style.css</strong></p>
+
+      <h1 class="section-title" id="theme-menu">Template Menu</h1>
+      <p>Go to <strong>Index-header section at top</strong></p>
+      <pre class="brush:html">
+        <header> 
+          <div class="header-top ">
+              <div class="container-fluid container-padding">
+                  <div class="row align-items-center">
+                      <div class="col-lg-6 col-md-6">
+                          <p>Are you interested in Joining program? <a href="#">Contact me.</a></p>
+                      </div>
+                      <div class="col-lg-6 col-md-6">
+                          <div class="header-right float-lg-right">
+                              <a href="#">Join Now</a>
+                              <a href="#">Courses</a>
+                              <a href="#">Membership Login</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>    
+          </div>
+    
+          <!-- Main Menu Start -->
+        
+          <div class="site-navigation main_menu menu-transparent" id="mainmenu-area">
+              <nav class="navbar navbar-expand-lg">
+                  <div class="container-fluid container-padding">
+                      <a class="navbar-brand" href="index.html">
+                          <img src="assets/images/dark-logo.png" alt="Eduhash" class="img-fluid">
+                      </a>
+    
+                      <!-- Toggler -->
+    
+                      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="fa fa-bars"></span>
+                      </button>
+    
+                      <!-- Collapse -->
+                      <div class="collapse navbar-collapse" id="navbarMenu">
+                        
+                          <ul class="navbar-nav mx-auto">
+                              <li class="nav-item dropdown">
+                                  <a class="nav-link dropdown-toggle" href="#" id="navbar3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      Home<i class="fa fa-angle-down"></i>
+                                  </a>
+                                  <div class="dropdown-menu" aria-labelledby="navbar3">
+                                      <a class="dropdown-item " href="index.html">
+                                          Home 1
+                                      </a>
+                                      <a class="dropdown-item " href="index-2.html">
+                                          Home 2
+                                      </a> 
+                                      <a class="dropdown-item " href="index-3.html">
+                                          Home 3
+                                      </a> 
+                                      <a class="dropdown-item " href="index-4.html">
+                                          Home 4
+                                      </a> 
+                                  </div>
+                              </li>
+                              <li class="nav-item ">
+                                  <a href="about.html" class="nav-link js-scroll-trigger">
+                                      About us
+                                  </a>
+                              </li>
+    
+                              <li class="nav-item dropdown">
+                                  <a class="nav-link dropdown-toggle" href="#" id="navbar3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      Courses<i class="fa fa-angle-down"></i>
+                                  </a>
+                                  <div class="dropdown-menu" aria-labelledby="navbar3">
+                                      <a class="dropdown-item " href="course-grid.html">
+                                          Course Style 1
+                                      </a>
+                                      <a class="dropdown-item " href="course-grid-2.html">
+                                          Course Style 2
+                                      </a> 
+    
+                                      <a class="dropdown-item " href="course-grid-3.html">
+                                          Course Style 3
+                                      </a> 
+                                      <a class="dropdown-item " href="course-grid-4.html">
+                                          Course Style 4
+                                      </a> 
+                                      <a class="dropdown-item " href="course-single.html">
+                                          Course Details Style 1
+                                      </a> 
+                                      <a class="dropdown-item " href="course-single2.html">
+                                          Course Details Style 2
+                                      </a> 
+                                  </div>
+                              </li>
+                              <li class="nav-item dropdown">
+                                  <a class="nav-link dropdown-toggle" href="#" id="navbar3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      Pages<i class="fa fa-angle-down"></i>
+                                  </a>
+                                  <div class="dropdown-menu" aria-labelledby="navbar3">
+                                      <a class="dropdown-item " href="login.html">
+                                          Login
+                                      </a>
+                                      <a class="dropdown-item " href="register.html">
+                                          Register
+                                      </a> 
+                                      <a class="dropdown-item " href="cart.html">
+                                          cart
+                                      </a> 
+                                      <a class="dropdown-item " href="checkout.html">
+                                          checkout
+                                      </a> 
+                                      <a class="dropdown-item " href="error.html">
+                                          404
+                                      </a> 
+                                  </div>
+                              </li>
+                              <li class="nav-item dropdown">
+                                  <a class="nav-link dropdown-toggle" href="#" id="navbar3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      Blog<i class="fa fa-angle-down"></i>
+                                  </a>
+                                  <div class="dropdown-menu" aria-labelledby="navbar3">
+                                      <a class="dropdown-item " href="blog.html">
+                                          Blog
+                                      </a>
+                                      <a class="dropdown-item " href="blog-single.html">
+                                          Blog Single
+                                      </a> 
+                                  </div>
+                              </li>
+                              
+                              <li class="nav-item ">
+                                  <a href="contact.html" class="nav-link">
+                                      Contact
+                                  </a>
+                              </li>
+                          </ul>
+                          
+                          <div class="d-flex align-items-center">
+                              <div class="header-socials social-links d-lg-none d-xl-block">
+                                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                  <a href="#"><i class="fab fa-twitter"></i></a>
+                                  <a href="#"><i class="fab fa-linkedin"></i></a>
+                                  <a href="#"><i class="fab fa-pinterest"></i></a>
+                              </div>
+          
+                              <form action="#" class="header-form ml-3">
+                                  <input type="text" class="form-control" placeholder="search">
+                                  <i class="fa fa-search"></i>
+                              </form> 
+                          </div>
+                        
+                      </div> <!-- / .navbar-collapse -->
+                  </div> <!-- / .container -->
+              </nav>
+          </div>
+        </header>
+    
+    </pre>
+
+
+
+      <!--  Customize Settings -->
+
+      <h1 class="section-title" id="logo-upload">Logo upload</h1>
+      <p>You can Change your logo from Navigation menu section as below. Can change logo size from style css </p>
+      <img src="img/logo-header.png" alt="">
+
+      <h1 class="section-title" id="layout">Html layout structure</h1>
+      <pre class="brush: html">
+        <header>
+          
+        </header>
+
+        <section class="section">
+          
+        </section>
+        <section class="section">
+          
+        </section>
+        <section class="section">
+          
+        </section>
+
+        <footer>
+          
+        </footer>
+      </pre>
+
+      <h1 class="section-title" id="csslayout">Css structure</h1>
+        <pre class="brush: html">
+            <!-- bootstrap.min css -->
+            <link rel="stylesheet" href="assets/vendors/bootstrap/bootstrap.css">
+            <!-- Iconfont Css -->
+            <link rel="stylesheet" href="assets/vendors/fontawesome/css/all.css">
+            <link rel="stylesheet" href="assets/vendors/flaticon/flaticon.css">
+            <!-- animate.css -->
+            <link rel="stylesheet" href="assets/vendors/animate-css/animate.css">
+            <link rel="stylesheet" href="assets/vendors/owl/assets/owl.carousel.min.css">
+            <link rel="stylesheet" href="assets/vendors/owl/assets/owl.theme.default.min.css">
+
+            <!-- Main Stylesheet -->
+            <link rel="stylesheet" href="assets/css/style.css">
+            <link rel="stylesheet" href="assets/css/responsive.css">
+          </pre>
+
+      <h1 class="section-title" id="jslayout">JS structure</h1>
+      <pre class="brush: html">
+          <script src="assets/vendors/jquery/jquery.js"></script>
+          <!-- Bootstrap 4.5 -->
+          <script src="assets/vendors/bootstrap/bootstrap.js"></script>
+          <!-- Counterup -->
+          <script src="assets/vendors/counterup/waypoint.js"></script>
+          <script src="assets/vendors/counterup/jquery.counterup.min.js"></script>
+          <script src="assets/vendors/jquery.isotope.js"></script>
+          <script src="assets/vendors/imagesloaded.js"></script>
+          <script src="assets/vendors/owl/owl.carousel.min.js"></script>
+      
+                    <script src="assets/js/script.js"></script>
+      </pre>
+
+      <h1 class="section-title" id="footer">Footer structure</h1>
+      <pre class="brush: html">
+        <section class="footer">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-4 mr-auto col-sm-6 col-md-6">
+                <div class="widget footer-widget mb-5 mb-lg-0">
+                  <div class="footer-logo">
+                    <img src="assets/images/dark-logo.png" alt="EduHash" class="img-fluid">
+                  </div>
+                  <p class="mt-3">Veniam Sequi molestias aut necessitatibus optio magni at natus accusamus.Lorem ipsum dolor sit amet, consectetur adipisicin gelit, sed do eiusmod tempor incididunt .</p>
+                  <ul class="list-inline footer-socials">
+                    <li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li class="list-inline-item"> <a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li class="list-inline-item"><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                    <li class="list-inline-item"><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+              
+              <div class="col-lg-2 col-sm-6 col-md-6 col-xl-2">
+                <div class="footer-widget mb-5 mb-lg-0">
+                  <h5 class="widget-title">Explore</h5>
+                  <ul class="list-unstyled footer-links">
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Terms & Condition</a></li>
+                    <li><a href="#">Privacy policy</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-2 col-sm-6 col-md-6 col-xl-2">
+                <div class="footer-widget mb-5 mb-lg-0">
+                  <h5 class="widget-title">Courses</h5>
+                  <ul class="list-unstyled footer-links">
+                    <li><a href="#">SEO Business</a></li>
+                    <li><a href="#">Digital Marketing</a></li>
+                    <li><a href="#">Graphic Design</a></li>
+                    <li><a href="#">Site Development</a></li>
+                    <li><a href="#">Social Marketing</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-2 col-sm-6 col-md-6 col-xl-2">
+                <div class="footer-widget footer-links mb-5 mb-lg-0">
+                  <h5 class="widget-title">Address </h5>
+                  
+                  <ul class="list-unstyled">
+                    <li>+(68) 345 5902</li>
+                    <li>info@yourdomain.com</li>
+                    <li>123 Fifth Floor East 26th Street,
+                      New York, NY 10011</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+          <div class="footer-btm">
+            <div class="container">
+              <div class="row justify-content-center align-items-center">
+                <div class="col-xl-6 col-lg-6">
+                  <div class="copyright text-lg-left text-center">
+                    <p>© Copyright EduHash Template All rights reserved.Crafted by <a href="https://themeturn.com">Dreambuzz</a> </p>
+                  </div>
+                </div>
+                <div class="col-xl-6 col-lg-6">
+                  <ul class="list-inline footer-contact  text-lg-right text-center mt-4 mt-lg-0">
+                    <li class="list-inline-item"><a href="#">Home</a></li>
+                    <li class="list-inline-item"><a href="#">Courses</a></li>
+                    <li class="list-inline-item"><a href="#">Blog</a></li>
+                    <li class="list-inline-item"><a href="#">Support</a></li>
+                    <li class="list-inline-item"><a href="#">Contact</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <div class="fixed-btm-top">
+          <a href="#top-header" class="js-scroll-trigger scroll-to-top"><i class="fa fa-angle-up"></i></a>
+        </div>
+        
+        
+        
+      </pre>
+  <hr>
+
+      <h1 class="section-title" id="contact-form">Contact Form</h1>
+        <p>Open up the mail.php file and put the email <strong> $mail_to</strong> section</p>
+				<p>You can see the screenshot to check.</p>
+		
+				<img src="img/mail.png" alt="" class="img-responsive">
+
+
+        <h1 class="section-title" id="img-source">Image Sources</h1>
+
+        <ul>
+          <li>Pexels</li>
+          <li>Unsplash</li>
+          <li>Burst Shopify</li>
+        </ul>
+
+      <h1 class="section-title" id="credits">Credits</h1>
+        <ul>
+          <li><a target="_blank" href="http://jquery.com/">jQuery</a></li>
+          <li><a target="_blank" href="http://getbootstrap.com/">Bootstrap</a></li>
+          <li><a target="_blank" href="https://owlcarousel2.github.io/OwlCarousel2/">Owl Carousel</a></li>
+          <li><a target="_blank" href="http://fontawesome.io/">FontAwesome</a></li>
+          <li><a target="_blank" href="http://dimsemenov.com/plugins/magnific-popup/">Magnefic Pop Up</a></li>
+        </ul>
+
+
+      <h1 class="section-title">Support</h1>
+      <p>If you have any question feel free to Contact at our mail <strong>dreambuzz71@gmail.com</strong></a></p>   
+      
+     
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="copyright">
+          <span>
+            &copy; 2020 EduHash | Made by <a href="http://www.bootstrapmb.com/">Dreambuzz</a>
+          </span>
+        </div>
+      </footer> <!-- end footer -->
+
+
+    </div> <!-- end content wrapper -->
+  </div> <!-- end main wrapper -->
+
+  <!-- jQuery Scripts -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/plugins.js"></script>
+  <script type="text/javascript" src="js/scripts.js"></script>
+
+  <script type="text/javascript" src="syntax-highlighter/scripts/shCore.js"></script>
+	<script type="text/javascript" src="syntax-highlighter/scripts/shBrushXml.js"></script>
+	<script type="text/javascript" src="syntax-highlighter/scripts/shBrushCss.js"></script>
+	<script type="text/javascript" src="syntax-highlighter/scripts/shBrushJScript.js"></script>
+	<script type="text/javascript" src="syntax-highlighter/scripts/shBrushPhp.js"></script>
+	<script type="text/javascript">
+		SyntaxHighlighter.all()
+	</script>
+
+</body>
+</html>
