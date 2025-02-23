@@ -75,6 +75,15 @@
 - **保研信息平台 :**  [点击关注](https://space.bilibili.com/32875736)
 
 
+<table>
+  <tr>
+    <td align="center"><img src="https://raw.githubusercontent.com/jsjby/jsjby.github.io/main/image/b站计算机保研.png" width="333"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/jsjby/jsjby.github.io/main/image/历史数据.png" width="333"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/jsjby/jsjby.github.io/main/image/小红书计算机保研.png" width="333"></td>
+  </tr>
+</table>
+
+
 
 # 部分录取图片展示
 
