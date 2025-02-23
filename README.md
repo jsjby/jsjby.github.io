@@ -1,19 +1,14 @@
 <div align="center">
   
-# 保研信息平台 :speaker:  
-**— 最新的夏令营 / 预推免通知及名单 —**
-
-![访问次数](https://profile-counter.glitch.me/jsjby/count.svg "访问次数")
+# 保研信息平台
 
 </div>
 
----
-
 ## :loudspeaker: 官方渠道 | 关注我们，获取最新保研资讯
 
-- **微信公众号（4,000+粉丝）**:  [计算机保研信息平台](https://mp.weixin.qq.com/s/EEEoK8YZXddrS9m9SOTwDQ)  
+- **微信公众号（5,000+粉丝）**:  [计算机保研信息平台](https://mp.weixin.qq.com/s/EEEoK8YZXddrS9m9SOTwDQ)  
 
-- **哔哩哔哩主页（80,000+粉丝）**:  [计算机保研](https://space.bilibili.com/258646084?)
+- **哔哩哔哩主页（8,000+粉丝）**:  [计算机保研](https://space.bilibili.com/258646084?)
 
 - **小红书主页（5,000+粉丝）**:  [计算机保研](https://www.xiaohongshu.com/user/profile/558ce88b874dfa0e75b5d7e5)
 
