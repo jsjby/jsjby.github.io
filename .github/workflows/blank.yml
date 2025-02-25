@@ -1,36 +1,45 @@
-# This is a basic workflow to help you get started with Actions
+name: Deploy GitHub Pages
 
-name: CI
-
-# Controls when the workflow will run
 on:
-  # Triggers the workflow on push or pull request events but only for the "main" branch
   push:
-    branches: [ "main" ]
+    branches:
+      - main  # 当 main 分支有 push 时触发
   pull_request:
-    branches: [ "main" ]
+    branches:
+      - main  # 当有 pull request 时触发
+  workflow_dispatch:  # 允许手动触发
 
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
-
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
-  build:
-    # The type of runner that the job will run on
+  deploy:
     runs-on: ubuntu-latest
 
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v4
+      - name: Checkout Repository
+        uses: actions/checkout@v4
 
-      # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: echo Hello, world!
+      - name: Setup Node.js
+        uses: actions/setup-node@v18
+        with:
+          node-version: 18
 
-      # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
+      - name: Install Dependencies (if needed)
         run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+          npm install  # 如果你的项目需要 npm 依赖
+
+      - name: Build Project (if needed)
+        run: |
+          npm run build || echo "No build script needed"
+
+      - name: Commit README.md Changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git commit -m "Auto-update README.md from CI" || echo "No changes to commit"
+          git push origin main
+
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages  # 部署到 gh-pages 分支
+          folder: .  # 部署当前目录
