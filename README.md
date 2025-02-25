@@ -27,17 +27,6 @@
 
 ---
 
-## 🎓 保研信息平台 | 最新夏令营 & 预推免通知
-
-### 2022、2023、2024 夏令营通知 🔥
-- [2024 计算机类夏令营](https://github.com/jsjby/jsjby_2024)  
-- [2024 电子、电气、自动化类夏令营](https://github.com/jsjby/-summer_camp_2024_ee)
-- [23 年夏令营通知](https://github.com/jsjby/jsjby_2023/tree/main)  
-- [23 年夏令营入营名单](https://github.com/jsjby/jsjby23_ruying)  
-- [23 年夏令营优营名单](https://github.com/jsjby/youying)
-
----
-
 ## 📚 夏令营专业方向
 
 ### 🚀 2025 年 夏令营通知
@@ -52,6 +41,18 @@
 - **[管理类](https://github.com/jsjby/gll)**  工商管理、市场营销、人力资源管理、会计学、财务管理等
 
 > 💡 **无论你的专业方向如何，我们都能为你提供针对性的保研信息、经验分享和资源支持，助力你顺利上岸！**
+
+
+---
+
+## 🎓 保研信息平台 | 最新夏令营 & 预推免通知
+
+### 2022、2023、2024 夏令营通知 🔥
+- [2024 计算机类夏令营](https://github.com/jsjby/jsjby_2024)  
+- [2024 电子、电气、自动化类夏令营](https://github.com/jsjby/-summer_camp_2024_ee)
+- [23 年夏令营通知](https://github.com/jsjby/jsjby_2023/tree/main)  
+- [23 年夏令营入营名单](https://github.com/jsjby/jsjby23_ruying)  
+- [23 年夏令营优营名单](https://github.com/jsjby/youying)
 
 ---
 
