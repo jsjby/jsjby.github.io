@@ -4,9 +4,6 @@ on:
   push:
     branches:
       - main  # 当 main 分支有 push 时触发
-  pull_request:
-    branches:
-      - main  # 当有 pull request 时触发
   workflow_dispatch:  # 允许手动触发
 
 jobs:
@@ -16,19 +13,6 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: 18
-
-      - name: Install Dependencies (if needed)
-        run: |
-          npm install  # 如果你的项目需要 npm 依赖
-
-      - name: Build Project (if needed)
-        run: |
-          npm run build || echo "No build script needed"
 
       - name: Commit README.md Changes
         run: |
@@ -42,4 +26,4 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages  # 部署到 gh-pages 分支
-          folder: .  # 部署当前目录
+          folder: .         # 部署当前目录
